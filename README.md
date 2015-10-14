@@ -1,0 +1,12 @@
+#Skeleton for nodejs v0.12 with ES6 (babeljs) and all we need to well start any kind of project
+
+- travis pre-filled file
+- esdoc.json pre-filled file (work with : esdoc -c esdoc.json)
+- testing with MOCHA + SINON + CHAI
+- gulp watch to listen on any changes on src and reload tests
+- istanbul coverage included
+- bunyan for logs
+
+In this skeleton, statsd is not use. Bunyan makes the job with Elasticsearch / Logstash / Kibana stack and Sitespeed.IO / Graphite / Grafana stack.
+
+Feel free to clone, and to ask for more
