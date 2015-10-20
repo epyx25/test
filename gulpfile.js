@@ -5,20 +5,24 @@ uglify = require('gulp-uglify'),
 watch = require('gulp-watch'),
 istanbul = require('gulp-istanbul'),
 plumber = require('gulp-plumber'),
-jshint = require('gulp-jshint');
+jshint = require('gulp-jshint'),
+rimraf = require('rimraf');
 
 gulp.task('default',['lint'], function () {
-  return gulp.src('src/**/*.js')
-  .pipe(plumber())
-  .pipe(babel())
-  .pipe(uglify())
-  .pipe(gulp.dest('dist'));
+
+  rimraf('./dist', function(){
+    return gulp.src('src/**/*.js')
+    .pipe(plumber())
+    .pipe(babel())
+    .pipe(uglify())
+    .pipe(gulp.dest('dist'));
+  });
 });
 
 gulp.task('lint', function() {
   return gulp.src('src/**/*.js')
-    .pipe(jshint({esnext:true}))
-    .pipe(jshint.reporter('default'));
+  .pipe(jshint({esnext:true}))
+  .pipe(jshint.reporter('default'));
 });
 
 gulp.task('pre-test',['default'], function () {
