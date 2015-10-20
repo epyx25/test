@@ -6,17 +6,20 @@ watch = require('gulp-watch'),
 istanbul = require('gulp-istanbul'),
 plumber = require('gulp-plumber'),
 jshint = require('gulp-jshint'),
-rimraf = require('rimraf');
+del = require('del');
 
-gulp.task('default',['lint'], function () {
+gulp.task('default',['lint','clean'], function () {
+  return gulp.src('src/**/*.js')
+  .pipe(plumber())
+  .pipe(babel())
+  .pipe(uglify())
+  .pipe(gulp.dest('dist'));
+});
 
-  rimraf('./dist', function(){
-    return gulp.src('src/**/*.js')
-    .pipe(plumber())
-    .pipe(babel())
-    .pipe(uglify())
-    .pipe(gulp.dest('dist'));
-  });
+gulp.task('clean',function(){
+  return del([
+    'dist/**/*'
+  ]);
 });
 
 gulp.task('lint', function() {
