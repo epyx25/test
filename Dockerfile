@@ -26,10 +26,13 @@ RUN cd project-skeleton
 RUN npm install -g mocha gulp
 
 # Install local dependencies
-RUN npm install
+RUN npm install esdoc
 
-# Pre-production tasks
-RUN gulp
+# Pre-production tasks && testing
+RUN gulp test
+
+# Documentation generation
+RUN esdoc -c esdoc.json
 
 # Start the project as a daemon
 #more informations to have pm2 reports on the github page : https://github.com/Unitech/pm2
