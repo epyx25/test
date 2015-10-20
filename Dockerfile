@@ -10,7 +10,7 @@ CMD ["/sbin/my_init"]
 RUN apt-get update && apt-get install -y \
   git \
   pm2 \
-  curl\
+  curl
 
 # Downloading NodeJs v0.12
 RUN curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
