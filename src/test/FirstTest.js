@@ -1,16 +1,15 @@
+import FirstClass from '../app/FirstClass';
 let chai = require('chai');
 let sinon = require("sinon");
 let expect = chai.expect;
 
-/** @test {ClassName} */
-describe('ClassName ',function(){
+/** @test {FirstClass} */
+describe('FirstClass ',function(){
 
   /** @test {ClassName#methodName} */
-  describe('Classname#methodName',function(){
-    it('Excpect 3 to equals 3',function(){
-      var callback = sinon.stub();
-      callback.withArgs(42).returns(1);
-      expect(callback(42)).to.equals(2);
+  describe('FirstClass#get',function(){
+    it('Excpect 1 to equals 1',function(){
+      expect(new FirstClass().get()).to.equals(1);
     });
   });
 });

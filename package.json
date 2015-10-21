@@ -18,7 +18,8 @@
   "dependencies":{
     "underscore":"1.8.3",
     "colors":"1.1.2",
-    "bunyan":"1.5.1"
+    "bunyan":"1.5.1",
+    "js-yaml":"3.4.3"
   },
   "devDependencies":{
     "gulp": "3.9.0",
