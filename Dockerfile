@@ -9,34 +9,20 @@ CMD ["/sbin/my_init"]
 # Git, pm2, curl
 RUN apt-get update && apt-get install -y \
   git \
-  pm2 \
   curl
 
 # Downloading NodeJs v0.12
 RUN curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
-RUN apt-get install nodejs
+RUN apt-get install -y nodejs
 
 # Cloning repository, could change with the good project git repository
 RUN git clone https://github.com/Skahrz/project-skeleton.git
 
-# Move inside of the project
-RUN cd project-skeleton
-
 # Install global dependencies
-RUN npm install -g mocha gulp
+RUN npm install -g mocha gulp esdoc pm2
 
-# Install local dependencies
-RUN npm install esdoc
-
-# Pre-production tasks && testing
-RUN gulp test
-
-# Documentation generation
-RUN esdoc -c esdoc.json
-
-# Start the project as a daemon
-#more informations to have pm2 reports on the github page : https://github.com/Unitech/pm2
-RUN pm2 start {your-entry-point-here}
+# Move inside of the project
+RUN cd test-docker && npm install && esdoc -c esdoc.json  &&  npm test && pm2 start dist/app.js
 
 
 # Clean up APT when done.
