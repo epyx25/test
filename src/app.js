@@ -7,6 +7,7 @@ class Application{
 
   /**
   * The main method, the entry point of the application
+  * @param {Object} argv Arguments from process.argv
   */
   static main(argv){
     let configuration = new ConfReader().read('./dist/conf/'+argv[2]+'.yml');
