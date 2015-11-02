@@ -10,7 +10,7 @@
   },
   "keywords":[],
   "scripts": {
-    "start":"gulp",
+    "start":"gulp && node ./dist/app dev",
     "test": "gulp test"
   },
   "author": "Marvin Frachet",

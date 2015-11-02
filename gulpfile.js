@@ -8,12 +8,17 @@ plumber = require('gulp-plumber'),
 jshint = require('gulp-jshint'),
 del = require('del');
 
-gulp.task('default',['lint','clean'], function () {
+gulp.task('default',['conf','lint','clean'], function () {
   return gulp.src('src/**/*.js')
   .pipe(plumber())
   .pipe(babel())
   .pipe(uglify())
   .pipe(gulp.dest('dist'));
+});
+
+gulp.task('conf',function(){
+  return gulp.src('src/conf/*')
+  .pipe(gulp.dest('dist/conf'));
 });
 
 gulp.task('clean',function(){

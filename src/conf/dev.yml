@@ -1,11 +1,11 @@
 # NodeJs server configuration
 node:
-  port:80
-  clusterMode:no
+  port: 80
+  clusterMode: no
 
 # Database configuration
 database:
-  name:'test'
-  port:27017
-  user:myUser
-  password:myPassword
+  name: test
+  port: 27017
+  user: myUser
+  password: myPassword
