@@ -1,6 +1,6 @@
 {
   "source": "./src/app",
-  "destination": "./documentation/application",
+  "destination": "./documentation",
   "test": {
     "type": "mocha",
     "source": "./src/test"
