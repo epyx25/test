@@ -2,35 +2,119 @@
 <html lang="en">
 <head>
     <title>Code coverage report for logger\LoggerFactory.js</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="../prettify.css">
-    <link rel="stylesheet" href="../base.css">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style type='text/css'>
-        div.coverage-summary .sorter {
+        .coverage-summary .sorter {
             background-image: url(../sort-arrow-sprite.png);
         }
     </style>
 </head>
 <body>
-<div class="header high">
-    <h1>Code coverage report for <span class="entity">logger\LoggerFactory.js</span></h1>
-    <h2>
-        Statements: <span class="metric">83.33% <small>(15 / 18)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
-        Branches: <span class="metric">75% <small>(12 / 16)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
-        Functions: <span class="metric">75% <small>(6 / 8)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
-        Lines: <span class="metric">100% <small>(1 / 1)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
-        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
-    </h2>
-    <div class="path"><a href="../index.html">All files</a> &#187; <a href="index.html">logger/</a> &#187; LoggerFactory.js</div>
-</div>
-<div class="body">
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">logger/</a> LoggerFactory.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>33/33</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>16/16</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>8/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>4/4</span>
+      </div>
+      <div class='fl pad1y'>
+        <span class="strong">4 statements, 2 functions, 6 branches</span>
+        <span class="quiet">Ignored</span>  &nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
-<tr><td class="line-count">1</td><td class="line-coverage"><span class="cline-any cline-yes">2</span></td><td class="text"><pre class="prettyprint lang-js">"use strict";function _interopRequireDefault(e){return e&amp;&amp;e.__esModule?<span class="branch-0 cbranch-no" title="branch not covered" >e:</span>{"default":e}}<span class="fstat-no" title="function not covered" >function _classCallCheck(e,n){<span class="cstat-no" title="statement not covered" ></span>if(!(e instanceof n))<span class="cstat-no" title="statement not covered" >throw new TypeError("Cannot call a class as a function")}</span></span>Object.defineProperty(exports,"__esModule",{value:!0});var _createClass=function(){function e(e,n){for(var r=0;r&lt;n.length;r++){var t=n[r];t.enumerable=t.enumerable||!1,t.configurable=!0,"value"in t&amp;&amp;(t.writable=!0),Object.defineProperty(e,t.key,t)}}return function(n,r,t){return r&amp;&amp;<span class="branch-1 cbranch-no" title="branch not covered" >e(n.prototype,r),</span>t&amp;&amp;e(n,t),n}}(),_concreteBunyanLogger=require("./concrete/BunyanLogger"),_concreteBunyanLogger2=_interopRequireDefault(_concreteBunyanLogger),LoggerFactory=function(){<span class="fstat-no" title="function not covered" >function e(){<span class="cstat-no" title="statement not covered" ></span>_classCallCheck(this,e)}</span>return _createClass(e,null,[{key:"get",value:function(e,n){return"bunyan"===e.toLowerCase()?new _concreteBunyanLogger2["default"](n):null}}]),e}();exports["default"]=LoggerFactory,module.exports=exports["default"];</pre></td></tr>
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import BunyanLogger from './concrete/BunyanLogger'
+/**
+* Logger Facory class
+*/
+export default class LoggerFactory {
+&nbsp;
+  /**
+  * Get a logger from its name or return null
+  * @param {String} name Name of the logger
+  * @param {Object} params Parameters of the logger
+  * @return {Object} The logger object or null if doesn't exist
+  */
+  static get (name, params) {
+    if (name.toLowerCase() === 'bunyan') {
+      return new BunyanLogger(params)
+    }
+    return null
+  }
+&nbsp;
+}
+&nbsp;</pre></td></tr>
 </table></pre>
-
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue May 31 2016 08:34:21 GMT+0200 (Paris, Madrid (heure d’été))
 </div>
-<div class="footer">
-    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Nov 02 2015 10:54:54 GMT+0100 (Paris, Madrid)</div>
 </div>
 <script src="../prettify.js"></script>
 <script>
