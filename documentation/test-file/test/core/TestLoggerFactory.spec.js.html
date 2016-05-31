@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base data-ice="baseUrl">
-  <title data-ice="title">Index | API Document</title>
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">test/core/TestLoggerFactory.spec.js | API Document</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -39,97 +39,31 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1>References</h1>
-<div data-ice="classSummary"><h2 id="class">Class Summary</h2><table class="summary" data-ice="summary">
-  <thead><tr><td data-ice="title" colspan="3">Static Public Class Summary</td></tr></thead>
-  <tbody>
-  
-  <tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-           <span data-ice="name"><span><a href="class/app/core/logger/concrete/BunyanLogger.js~BunyanLogger.html">BunyanLogger</a></span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Bunyan logger implementation</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-           <span data-ice="name"><span><a href="class/app/core/conf/ConfReader.js~ConfReader.html">ConfReader</a></span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>ConfReader
-This class aims to read the yml configuration files</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-           <span data-ice="name"><span><a href="class/app/core/logger/LoggerFactory.js~LoggerFactory.html">LoggerFactory</a></span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Logger Facory class</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-</tbody>
-</table>
-</div>
+<div class="content" data-ice="content"><h1 data-ice="title">test/core/TestLoggerFactory.spec.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import LoggerFactory from &apos;../../app/core/logger/LoggerFactory&apos;
+import BunyanLogger from &apos;../../app/core/logger/concrete/BunyanLogger&apos;
 
+let chai = require(&apos;chai&apos;)
+let sinon = require(&apos;sinon&apos;)
+let expect = chai.expect
 
+/** @test {LoggerFactory} */
+describe(&apos;LoggerFactory &apos;, function () {
+  /** @test {LoggerFactory#get} */
+  describe(&apos;LoggerFactory#get&apos;, function () {
+    it(&apos;Expect logger to equals null&apos;, function () {
+      expect(LoggerFactory.get(&apos;unknown&apos;)).to.equals(null)
+    })
+  })
 
-
+  /** @test {LoggerFactory#get} */
+  describe(&apos;LoggerFactory#get&apos;, function () {
+    it(&apos;Expect logger instanceof to equals BunyanLogger&apos;, function () {
+      expect(LoggerFactory.get(&apos;bunyan&apos;, {name: &apos;my-app&apos;})).to.be.an.instanceof(BunyanLogger)
+    })
+  })
+})
+</code></pre>
 
 </div>
 

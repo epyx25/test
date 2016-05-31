@@ -11,8 +11,9 @@
     "keywords": [],
     "scripts": {
         "start": "gulp && node ./dist/app dev",
-        "test": "gulp test:unit",
-        "lint": "npm run standard"
+        "test": "npm run standard && gulp test:unit",
+        "lint": "npm run standard",
+        "docs": "esdoc -c esdoc.json"
     },
     "author": "Marvin Frachet",
     "license": "MIT",
@@ -24,6 +25,7 @@
     "devDependencies": {
         "babel-core": "^5.5.0",
         "babel-preset-es2015": "^6.5.0",
+        "esdoc": "0.4.3",
         "chai": "3.0.0",
         "del": "2.0.2",
         "gulp": "^3.9.1",

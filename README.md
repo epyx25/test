@@ -12,3 +12,6 @@
 In this skeleton, statsd is not use. Bunyan makes the job with Elasticsearch / Logstash / Kibana stack and Sitespeed.IO / Graphite / Grafana stack.
 
 Feel free to clone, and to ask for more
+
+
+- Install globally gulp, standard and esdoc@0.4.3 (not using ES6 for node < 4)

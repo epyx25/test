@@ -10,7 +10,7 @@
     "access": null,
     "description": null,
     "lineNumber": 1,
-    "content": "import yaml from 'js-yaml';\r\nimport fs from 'fs';\r\n\r\n/**\r\n* ConfReader\r\n* This class aims to read the yml configuration files\r\n*/\r\nexport default class ConfReader{\r\n\r\n  /**\r\n  * Read method, read a yml conf files\r\n  * @param {String} path The path of the conf file\r\n  * @return {Object} The JSON result from the YML parsed, or null if the file is not found\r\n  */\r\n  read(path){\r\n    try {\r\n      return yaml.safeLoad(fs.readFileSync(path, 'utf8'));\r\n    } catch (e) {\r\n      return null;\r\n    }\r\n  }\r\n}\r\n"
+    "content": "import yaml from 'js-yaml'\r\nimport fs from 'fs'\r\n\r\n/**\r\n* ConfReader\r\n* This class aims to read the yml configuration files\r\n*/\r\nexport default class ConfReader {\r\n\r\n  /**\r\n  * Read method, read a yml conf files\r\n  * @param {String} path The path of the conf file\r\n  * @return {Object} The JSON result from the YML parsed, or null if the file is not found\r\n  */\r\n  read (path) {\r\n    try {\r\n      return yaml.safeLoad(fs.readFileSync(path, 'utf8'))\r\n    } catch (e) {\r\n      return null\r\n    }\r\n  }\r\n}\r\n"
   },
   {
     "__docId__": 1,
@@ -72,7 +72,7 @@
     "access": null,
     "description": null,
     "lineNumber": 1,
-    "content": "import bunyan from 'bunyan';\r\n\r\n/**\r\n* Bunyan logger implementation\r\n*/\r\nexport default class BunyanLogger{\r\n\r\n\r\n  /**\r\n  * Construct a BunyanLogger\r\n  * @param {Object} params The logger parameters object\r\n  */\r\n  constructor(params){\r\n    this.logger = bunyan.createLogger(params);\r\n  }\r\n\r\n  /**\r\n  * Log the message as info\r\n  * @param {String} message The message to display\r\n  */\r\n  info(message){\r\n    this.logger.info(message);\r\n  }\r\n\r\n  /**\r\n  * Log the message as debug\r\n  * @param {String} message The message to display\r\n  */\r\n  debug(message){\r\n    this.logger.debug(message);\r\n  }\r\n\r\n  /**\r\n  * Log the message as warn\r\n  * @param {String} message The message to display\r\n  */\r\n  warn(message){\r\n    this.logger.warn(message);\r\n  }\r\n\r\n  /**\r\n  * Log the message as error\r\n  * @param {String} message The message to display\r\n  */\r\n  error(message){\r\n    this.logger.error(message);\r\n  }\r\n\r\n}\r\n"
+    "content": "import bunyan from 'bunyan'\r\n\r\n/**\r\n* Bunyan logger implementation\r\n*/\r\nexport default class BunyanLogger {\r\n\r\n  /**\r\n  * Construct a BunyanLogger\r\n  * @param {Object} params The logger parameters object\r\n  */\r\n  constructor (params) {\r\n    this.logger = bunyan.createLogger(params)\r\n  }\r\n\r\n  /**\r\n  * Log the message as info\r\n  * @param {String} message The message to display\r\n  */\r\n  info (message) {\r\n    this.logger.info(message)\r\n  }\r\n\r\n  /**\r\n  * Log the message as debug\r\n  * @param {String} message The message to display\r\n  */\r\n  debug (message) {\r\n    this.logger.debug(message)\r\n  }\r\n\r\n  /**\r\n  * Log the message as warn\r\n  * @param {String} message The message to display\r\n  */\r\n  warn (message) {\r\n    this.logger.warn(message)\r\n  }\r\n\r\n  /**\r\n  * Log the message as error\r\n  * @param {String} message The message to display\r\n  */\r\n  error (message) {\r\n    this.logger.error(message)\r\n  }\r\n\r\n}\r\n"
   },
   {
     "__docId__": 4,
@@ -100,7 +100,7 @@
     "longname": "app/core/logger/concrete/BunyanLogger.js~BunyanLogger#constructor",
     "access": null,
     "description": "Construct a BunyanLogger",
-    "lineNumber": 13,
+    "lineNumber": 12,
     "params": [
       {
         "nullable": null,
@@ -125,7 +125,7 @@
     "longname": "app/core/logger/concrete/BunyanLogger.js~BunyanLogger#logger",
     "access": null,
     "description": null,
-    "lineNumber": 14,
+    "lineNumber": 13,
     "undocument": true,
     "type": {
       "types": [
@@ -143,7 +143,7 @@
     "longname": "app/core/logger/concrete/BunyanLogger.js~BunyanLogger#info",
     "access": null,
     "description": "Log the message as info",
-    "lineNumber": 21,
+    "lineNumber": 20,
     "params": [
       {
         "nullable": null,
@@ -168,7 +168,7 @@
     "longname": "app/core/logger/concrete/BunyanLogger.js~BunyanLogger#debug",
     "access": null,
     "description": "Log the message as debug",
-    "lineNumber": 29,
+    "lineNumber": 28,
     "params": [
       {
         "nullable": null,
@@ -193,7 +193,7 @@
     "longname": "app/core/logger/concrete/BunyanLogger.js~BunyanLogger#warn",
     "access": null,
     "description": "Log the message as warn",
-    "lineNumber": 37,
+    "lineNumber": 36,
     "params": [
       {
         "nullable": null,
@@ -218,7 +218,7 @@
     "longname": "app/core/logger/concrete/BunyanLogger.js~BunyanLogger#error",
     "access": null,
     "description": "Log the message as error",
-    "lineNumber": 45,
+    "lineNumber": 44,
     "params": [
       {
         "nullable": null,
@@ -244,7 +244,7 @@
     "access": null,
     "description": null,
     "lineNumber": 1,
-    "content": "import BunyanLogger from './concrete/BunyanLogger';\r\n/**\r\n* Logger Facory class\r\n*/\r\nexport default class LoggerFactory{\r\n\r\n  /**\r\n  * Get a logger from its name or return null\r\n  * @param {String} name Name of the logger\r\n  * @param {Object} params Parameters of the logger\r\n  * @return {Object} The logger object or null if doesn't exist\r\n  */\r\n  static get(name, params){\r\n    if(name.toLowerCase() === 'bunyan'){\r\n      return new BunyanLogger(params);\r\n    }\r\n    return null;\r\n  }\r\n\r\n}\r\n"
+    "content": "import BunyanLogger from './concrete/BunyanLogger'\r\n/**\r\n* Logger Facory class\r\n*/\r\nexport default class LoggerFactory {\r\n\r\n  /**\r\n  * Get a logger from its name or return null\r\n  * @param {String} name Name of the logger\r\n  * @param {Object} params Parameters of the logger\r\n  * @return {Object} The logger object or null if doesn't exist\r\n  */\r\n  static get (name, params) {\r\n    if (name.toLowerCase() === 'bunyan') {\r\n      return new BunyanLogger(params)\r\n    }\r\n    return null\r\n  }\r\n\r\n}\r\n"
   },
   {
     "__docId__": 12,
@@ -1006,5 +1006,275 @@
     "access": null,
     "description": null,
     "builtinExternal": true
+  },
+  {
+    "__docId__": 70,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "AudioContext",
+    "externalLink": "https://developer.mozilla.org/en/docs/Web/API/AudioContext",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~AudioContext",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 71,
+    "kind": "testFile",
+    "static": true,
+    "variation": null,
+    "name": "test/core/TestConfReader.spec.js",
+    "memberof": null,
+    "longname": "test/core/TestConfReader.spec.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1,
+    "content": "import ConfReader from '../../app/core/conf/ConfReader'\r\nlet chai = require('chai')\r\nlet sinon = require('sinon')\r\nlet expect = chai.expect\r\n\r\n/** @test {ConfReader} */\r\ndescribe('ConfReader ', function () {\r\n  let confReader = null\r\n\r\n  /**\r\n  * Generate the ConfReader\r\n  */\r\n  before(function () {\r\n    confReader = new ConfReader()\r\n  })\r\n\r\n  /** @test {ConfReader#read} */\r\n  describe('ConfReader#read', function () {\r\n    it('Expect database name to equals \"test\"', function () {\r\n      let result = confReader.read('./src/conf/dev.yml')\r\n      expect(result.database.name).to.equals('test')\r\n    })\r\n  })\r\n\r\n  /** @test {ConfReader#read} */\r\n  describe('ConfReader#read', function () {\r\n    it('Expect database name to equals null', function () {\r\n      let result = confReader.read('./src/conf/dev.yml')\r\n      expect(result.database.toto).to.equals(undefined)\r\n    })\r\n  })\r\n\r\n  /** @test {ConfReader#read} */\r\n  describe('ConfReader#read', function () {\r\n    it('Expect database name to equals null', function () {\r\n      let result = confReader.read('./src/conf/test.yml')\r\n      expect(result).to.equals(null)\r\n    })\r\n  })\r\n})\r\n"
+  },
+  {
+    "__docId__": 72,
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe0",
+    "testId": 0,
+    "memberof": "test/core/TestConfReader.spec.js",
+    "testDepth": 0,
+    "longname": "test/core/TestConfReader.spec.js~describe0",
+    "access": null,
+    "description": "ConfReader ",
+    "lineNumber": 7,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{ConfReader}"
+      }
+    ],
+    "testTargets": [
+      "ConfReader"
+    ]
+  },
+  {
+    "__docId__": 73,
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe1",
+    "testId": 1,
+    "memberof": "test/core/TestConfReader.spec.js~describe0",
+    "testDepth": 1,
+    "longname": "test/core/TestConfReader.spec.js~describe0.describe1",
+    "access": null,
+    "description": "ConfReader#read",
+    "lineNumber": 18,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{ConfReader#read}"
+      }
+    ],
+    "testTargets": [
+      "ConfReader#read"
+    ]
+  },
+  {
+    "__docId__": 74,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it2",
+    "testId": 2,
+    "memberof": "test/core/TestConfReader.spec.js~describe0.describe1",
+    "testDepth": 2,
+    "longname": "test/core/TestConfReader.spec.js~describe0.describe1.it2",
+    "access": null,
+    "description": "Expect database name to equals \"test\"",
+    "lineNumber": 19
+  },
+  {
+    "__docId__": 75,
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe3",
+    "testId": 3,
+    "memberof": "test/core/TestConfReader.spec.js~describe0",
+    "testDepth": 1,
+    "longname": "test/core/TestConfReader.spec.js~describe0.describe3",
+    "access": null,
+    "description": "ConfReader#read",
+    "lineNumber": 26,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{ConfReader#read}"
+      }
+    ],
+    "testTargets": [
+      "ConfReader#read"
+    ]
+  },
+  {
+    "__docId__": 76,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it4",
+    "testId": 4,
+    "memberof": "test/core/TestConfReader.spec.js~describe0.describe3",
+    "testDepth": 2,
+    "longname": "test/core/TestConfReader.spec.js~describe0.describe3.it4",
+    "access": null,
+    "description": "Expect database name to equals null",
+    "lineNumber": 27
+  },
+  {
+    "__docId__": 77,
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe5",
+    "testId": 5,
+    "memberof": "test/core/TestConfReader.spec.js~describe0",
+    "testDepth": 1,
+    "longname": "test/core/TestConfReader.spec.js~describe0.describe5",
+    "access": null,
+    "description": "ConfReader#read",
+    "lineNumber": 34,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{ConfReader#read}"
+      }
+    ],
+    "testTargets": [
+      "ConfReader#read"
+    ]
+  },
+  {
+    "__docId__": 78,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it6",
+    "testId": 6,
+    "memberof": "test/core/TestConfReader.spec.js~describe0.describe5",
+    "testDepth": 2,
+    "longname": "test/core/TestConfReader.spec.js~describe0.describe5.it6",
+    "access": null,
+    "description": "Expect database name to equals null",
+    "lineNumber": 35
+  },
+  {
+    "__docId__": 79,
+    "kind": "testFile",
+    "static": true,
+    "variation": null,
+    "name": "test/core/TestLoggerFactory.spec.js",
+    "memberof": null,
+    "longname": "test/core/TestLoggerFactory.spec.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1,
+    "content": "import LoggerFactory from '../../app/core/logger/LoggerFactory'\r\nimport BunyanLogger from '../../app/core/logger/concrete/BunyanLogger'\r\n\r\nlet chai = require('chai')\r\nlet sinon = require('sinon')\r\nlet expect = chai.expect\r\n\r\n/** @test {LoggerFactory} */\r\ndescribe('LoggerFactory ', function () {\r\n  /** @test {LoggerFactory#get} */\r\n  describe('LoggerFactory#get', function () {\r\n    it('Expect logger to equals null', function () {\r\n      expect(LoggerFactory.get('unknown')).to.equals(null)\r\n    })\r\n  })\r\n\r\n  /** @test {LoggerFactory#get} */\r\n  describe('LoggerFactory#get', function () {\r\n    it('Expect logger instanceof to equals BunyanLogger', function () {\r\n      expect(LoggerFactory.get('bunyan', {name: 'my-app'})).to.be.an.instanceof(BunyanLogger)\r\n    })\r\n  })\r\n})\r\n"
+  },
+  {
+    "__docId__": 80,
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe7",
+    "testId": 7,
+    "memberof": "test/core/TestLoggerFactory.spec.js",
+    "testDepth": 0,
+    "longname": "test/core/TestLoggerFactory.spec.js~describe7",
+    "access": null,
+    "description": "LoggerFactory ",
+    "lineNumber": 9,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{LoggerFactory}"
+      }
+    ],
+    "testTargets": [
+      "LoggerFactory"
+    ]
+  },
+  {
+    "__docId__": 81,
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe8",
+    "testId": 8,
+    "memberof": "test/core/TestLoggerFactory.spec.js~describe7",
+    "testDepth": 1,
+    "longname": "test/core/TestLoggerFactory.spec.js~describe7.describe8",
+    "access": null,
+    "description": "LoggerFactory#get",
+    "lineNumber": 11,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{LoggerFactory#get}"
+      }
+    ],
+    "testTargets": [
+      "LoggerFactory#get"
+    ]
+  },
+  {
+    "__docId__": 82,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it9",
+    "testId": 9,
+    "memberof": "test/core/TestLoggerFactory.spec.js~describe7.describe8",
+    "testDepth": 2,
+    "longname": "test/core/TestLoggerFactory.spec.js~describe7.describe8.it9",
+    "access": null,
+    "description": "Expect logger to equals null",
+    "lineNumber": 12
+  },
+  {
+    "__docId__": 83,
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe10",
+    "testId": 10,
+    "memberof": "test/core/TestLoggerFactory.spec.js~describe7",
+    "testDepth": 1,
+    "longname": "test/core/TestLoggerFactory.spec.js~describe7.describe10",
+    "access": null,
+    "description": "LoggerFactory#get",
+    "lineNumber": 18,
+    "unknown": [
+      {
+        "tagName": "@test",
+        "tagValue": "{LoggerFactory#get}"
+      }
+    ],
+    "testTargets": [
+      "LoggerFactory#get"
+    ]
+  },
+  {
+    "__docId__": 84,
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it11",
+    "testId": 11,
+    "memberof": "test/core/TestLoggerFactory.spec.js~describe7.describe10",
+    "testDepth": 2,
+    "longname": "test/core/TestLoggerFactory.spec.js~describe7.describe10.it11",
+    "access": null,
+    "description": "Expect logger instanceof to equals BunyanLogger",
+    "lineNumber": 19
   }
 ]

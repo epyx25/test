@@ -300,6 +300,12 @@ window.esdocSearchIndex = [
     "external"
   ],
   [
+    "builtinexternal/webapiexternal.js~audiocontext",
+    "external/index.html",
+    "BuiltinExternal/WebAPIExternal.js~AudioContext",
+    "external"
+  ],
+  [
     "builtinexternal/webapiexternal.js~canvasrenderingcontext2d",
     "external/index.html",
     "BuiltinExternal/WebAPIExternal.js~CanvasRenderingContext2D",
@@ -340,6 +346,78 @@ window.esdocSearchIndex = [
     "external/index.html",
     "BuiltinExternal/WebAPIExternal.js~XMLHttpRequest",
     "external"
+  ],
+  [
+    "confreader app/core/conf/confreader.js~confreader,confreader",
+    "test-file/test/core/TestConfReader.spec.js.html#lineNumber7",
+    "ConfReader ",
+    "test"
+  ],
+  [
+    "confreader#read app/core/conf/confreader.js~confreader#read,confreader#read",
+    "test-file/test/core/TestConfReader.spec.js.html#lineNumber18",
+    "ConfReader  ConfReader#read",
+    "test"
+  ],
+  [
+    "confreader#read app/core/conf/confreader.js~confreader#read,confreader#read",
+    "test-file/test/core/TestConfReader.spec.js.html#lineNumber26",
+    "ConfReader  ConfReader#read",
+    "test"
+  ],
+  [
+    "confreader#read app/core/conf/confreader.js~confreader#read,confreader#read",
+    "test-file/test/core/TestConfReader.spec.js.html#lineNumber34",
+    "ConfReader  ConfReader#read",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/core/TestConfReader.spec.js.html#lineNumber19",
+    "ConfReader  ConfReader#read Expect database name to equals \"test\"",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/core/TestConfReader.spec.js.html#lineNumber35",
+    "ConfReader  ConfReader#read Expect database name to equals null",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/core/TestConfReader.spec.js.html#lineNumber27",
+    "ConfReader  ConfReader#read Expect database name to equals null",
+    "test"
+  ],
+  [
+    "loggerfactory app/core/logger/loggerfactory.js~loggerfactory,loggerfactory",
+    "test-file/test/core/TestLoggerFactory.spec.js.html#lineNumber9",
+    "LoggerFactory ",
+    "test"
+  ],
+  [
+    "loggerfactory#get loggerfactory#get,loggerfactory#get",
+    "test-file/test/core/TestLoggerFactory.spec.js.html#lineNumber18",
+    "LoggerFactory  LoggerFactory#get",
+    "test"
+  ],
+  [
+    "loggerfactory#get loggerfactory#get,loggerfactory#get",
+    "test-file/test/core/TestLoggerFactory.spec.js.html#lineNumber11",
+    "LoggerFactory  LoggerFactory#get",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/core/TestLoggerFactory.spec.js.html#lineNumber19",
+    "LoggerFactory  LoggerFactory#get Expect logger instanceof to equals BunyanLogger",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/core/TestLoggerFactory.spec.js.html#lineNumber12",
+    "LoggerFactory  LoggerFactory#get Expect logger to equals null",
+    "test"
   ],
   [
     "app/core/conf/confreader.js",
@@ -406,5 +484,17 @@ window.esdocSearchIndex = [
     "class/app/core/logger/concrete/BunyanLogger.js~BunyanLogger.html#instance-method-warn",
     "app/core/logger/concrete/BunyanLogger.js~BunyanLogger#warn",
     "method"
+  ],
+  [
+    "test/core/testconfreader.spec.js",
+    "test-file/test/core/TestConfReader.spec.js.html",
+    "test/core/TestConfReader.spec.js",
+    "testFile"
+  ],
+  [
+    "test/core/testloggerfactory.spec.js",
+    "test-file/test/core/TestLoggerFactory.spec.js.html",
+    "test/core/TestLoggerFactory.spec.js",
+    "testFile"
   ]
 ]

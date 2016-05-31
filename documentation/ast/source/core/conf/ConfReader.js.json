@@ -61,7 +61,7 @@
       },
       "range": [
         0,
-        27
+        28
       ],
       "loc": {
         "start": {
@@ -69,8 +69,8 @@
           "column": 0
         },
         "end": {
-          "line": 1,
-          "column": 27
+          "line": 2,
+          "column": 0
         }
       }
     },
@@ -83,8 +83,8 @@
             "type": "Identifier",
             "name": "fs",
             "range": [
-              36,
-              38
+              35,
+              37
             ],
             "loc": {
               "start": {
@@ -98,8 +98,8 @@
             }
           },
           "range": [
-            36,
-            38
+            35,
+            37
           ],
           "loc": {
             "start": {
@@ -118,8 +118,8 @@
         "value": "fs",
         "raw": "'fs'",
         "range": [
-          44,
-          48
+          43,
+          47
         ],
         "loc": {
           "start": {
@@ -130,11 +130,31 @@
             "line": 2,
             "column": 19
           }
-        }
+        },
+        "trailingComments": [
+          {
+            "type": "Block",
+            "value": "*\r\n* ConfReader\r\n* This class aims to read the yml configuration files\r\n",
+            "range": [
+              51,
+              127
+            ],
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 0
+              },
+              "end": {
+                "line": 7,
+                "column": 2
+              }
+            }
+          }
+        ]
       },
       "range": [
-        29,
-        49
+        28,
+        129
       ],
       "loc": {
         "start": {
@@ -142,30 +162,10 @@
           "column": 0
         },
         "end": {
-          "line": 2,
-          "column": 20
+          "line": 8,
+          "column": 0
         }
-      },
-      "trailingComments": [
-        {
-          "type": "Block",
-          "value": "*\r\n* ConfReader\r\n* This class aims to read the yml configuration files\r\n",
-          "range": [
-            53,
-            129
-          ],
-          "loc": {
-            "start": {
-              "line": 4,
-              "column": 0
-            },
-            "end": {
-              "line": 7,
-              "column": 2
-            }
-          }
-        }
-      ]
+      }
     },
     {
       "type": "ExportDefaultDeclaration",
@@ -175,8 +175,8 @@
           "type": "Identifier",
           "name": "ConfReader",
           "range": [
-            152,
-            162
+            150,
+            160
           ],
           "loc": {
             "start": {
@@ -199,8 +199,8 @@
                 "type": "Identifier",
                 "name": "read",
                 "range": [
-                  366,
-                  370
+                  365,
+                  369
                 ],
                 "loc": {
                   "start": {
@@ -227,11 +227,11 @@
                     "loc": {
                       "start": {
                         "line": 15,
-                        "column": 7
+                        "column": 8
                       },
                       "end": {
                         "line": 15,
-                        "column": 11
+                        "column": 12
                       }
                     }
                   }
@@ -255,8 +255,8 @@
                                   "type": "Identifier",
                                   "name": "yaml",
                                   "range": [
-                                    403,
-                                    407
+                                    404,
+                                    408
                                   ],
                                   "loc": {
                                     "start": {
@@ -273,8 +273,8 @@
                                   "type": "Identifier",
                                   "name": "safeLoad",
                                   "range": [
-                                    408,
-                                    416
+                                    409,
+                                    417
                                   ],
                                   "loc": {
                                     "start": {
@@ -288,8 +288,8 @@
                                   }
                                 },
                                 "range": [
-                                  403,
-                                  416
+                                  404,
+                                  417
                                 ],
                                 "loc": {
                                   "start": {
@@ -312,8 +312,8 @@
                                       "type": "Identifier",
                                       "name": "fs",
                                       "range": [
-                                        417,
-                                        419
+                                        418,
+                                        420
                                       ],
                                       "loc": {
                                         "start": {
@@ -330,8 +330,8 @@
                                       "type": "Identifier",
                                       "name": "readFileSync",
                                       "range": [
-                                        420,
-                                        432
+                                        421,
+                                        433
                                       ],
                                       "loc": {
                                         "start": {
@@ -345,8 +345,8 @@
                                       }
                                     },
                                     "range": [
-                                      417,
-                                      432
+                                      418,
+                                      433
                                     ],
                                     "loc": {
                                       "start": {
@@ -364,8 +364,8 @@
                                       "type": "Identifier",
                                       "name": "path",
                                       "range": [
-                                        433,
-                                        437
+                                        434,
+                                        438
                                       ],
                                       "loc": {
                                         "start": {
@@ -383,8 +383,8 @@
                                       "value": "utf8",
                                       "raw": "'utf8'",
                                       "range": [
-                                        439,
-                                        445
+                                        440,
+                                        446
                                       ],
                                       "loc": {
                                         "start": {
@@ -399,8 +399,8 @@
                                     }
                                   ],
                                   "range": [
-                                    417,
-                                    446
+                                    418,
+                                    447
                                   ],
                                   "loc": {
                                     "start": {
@@ -415,8 +415,8 @@
                                 }
                               ],
                               "range": [
-                                403,
-                                447
+                                404,
+                                448
                               ],
                               "loc": {
                                 "start": {
@@ -430,8 +430,8 @@
                               }
                             },
                             "range": [
-                              396,
-                              448
+                              397,
+                              454
                             ],
                             "loc": {
                               "start": {
@@ -439,14 +439,14 @@
                                 "column": 6
                               },
                               "end": {
-                                "line": 17,
-                                "column": 58
+                                "line": 18,
+                                "column": 4
                               }
                             }
                           }
                         ],
                         "range": [
-                          387,
+                          388,
                           455
                         ],
                         "loc": {
@@ -506,7 +506,7 @@
                               },
                               "range": [
                                 475,
-                                487
+                                492
                               ],
                               "loc": {
                                 "start": {
@@ -514,15 +514,15 @@
                                   "column": 6
                                 },
                                 "end": {
-                                  "line": 19,
-                                  "column": 18
+                                  "line": 20,
+                                  "column": 4
                                 }
                               }
                             }
                           ],
                           "range": [
                             466,
-                            494
+                            493
                           ],
                           "loc": {
                             "start": {
@@ -537,7 +537,7 @@
                         },
                         "range": [
                           456,
-                          494
+                          493
                         ],
                         "loc": {
                           "start": {
@@ -552,8 +552,8 @@
                       },
                       "finalizer": null,
                       "range": [
-                        383,
-                        494
+                        384,
+                        493
                       ],
                       "loc": {
                         "start": {
@@ -568,13 +568,13 @@
                     }
                   ],
                   "range": [
-                    376,
-                    499
+                    377,
+                    498
                   ],
                   "loc": {
                     "start": {
                       "line": 15,
-                      "column": 12
+                      "column": 14
                     },
                     "end": {
                       "line": 21,
@@ -586,12 +586,12 @@
                 "expression": false,
                 "range": [
                   370,
-                  499
+                  498
                 ],
                 "loc": {
                   "start": {
                     "line": 15,
-                    "column": 6
+                    "column": 7
                   },
                   "end": {
                     "line": 21,
@@ -602,8 +602,8 @@
               "kind": "method",
               "computed": false,
               "range": [
-                366,
-                499
+                365,
+                498
               ],
               "loc": {
                 "start": {
@@ -620,8 +620,8 @@
                   "type": "Block",
                   "value": "*\r\n  * Read method, read a yml conf files\r\n  * @param {String} path The path of the conf file\r\n  * @return {Object} The JSON result from the YML parsed, or null if the file is not found\r\n  ",
                   "range": [
-                    169,
-                    362
+                    168,
+                    361
                   ],
                   "loc": {
                     "start": {
@@ -639,13 +639,13 @@
             }
           ],
           "range": [
-            162,
-            502
+            161,
+            501
           ],
           "loc": {
             "start": {
               "line": 8,
-              "column": 31
+              "column": 32
             },
             "end": {
               "line": 22,
@@ -654,8 +654,8 @@
           }
         },
         "range": [
-          146,
-          502
+          144,
+          501
         ],
         "loc": {
           "start": {
@@ -672,8 +672,8 @@
             "type": "Block",
             "value": "*\r\n* ConfReader\r\n* This class aims to read the yml configuration files\r\n",
             "range": [
-              53,
-              129
+              51,
+              127
             ],
             "loc": {
               "start": {
@@ -690,8 +690,8 @@
         "trailingComments": []
       },
       "range": [
-        131,
-        502
+        129,
+        501
       ],
       "loc": {
         "start": {
@@ -708,8 +708,8 @@
           "type": "Block",
           "value": "*\r\n* ConfReader\r\n* This class aims to read the yml configuration files\r\n",
           "range": [
-            53,
-            129
+            51,
+            127
           ],
           "loc": {
             "start": {
@@ -728,7 +728,7 @@
   "sourceType": "module",
   "range": [
     0,
-    502
+    501
   ],
   "loc": {
     "start": {
@@ -745,8 +745,8 @@
       "type": "Block",
       "value": "*\r\n* ConfReader\r\n* This class aims to read the yml configuration files\r\n",
       "range": [
-        53,
-        129
+        51,
+        127
       ],
       "loc": {
         "start": {
@@ -763,8 +763,8 @@
       "type": "Block",
       "value": "*\r\n  * Read method, read a yml conf files\r\n  * @param {String} path The path of the conf file\r\n  * @return {Object} The JSON result from the YML parsed, or null if the file is not found\r\n  ",
       "range": [
-        169,
-        362
+        168,
+        361
       ],
       "loc": {
         "start": {
