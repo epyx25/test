@@ -1,7 +1,7 @@
-import LoggerFactory from '../../app/core/logger/LoggerFactory'
-import BunyanLogger from '../../app/core/logger/concrete/BunyanLogger'
-import Chai from 'chai'
-const expect = Chai.expect
+import LoggerFactory from '../../../app/core/logger/LoggerFactory'
+import BunyanLogger from '../../../app/core/logger/concrete/BunyanLogger'
+import chai from 'chai'
+const expect = chai.expect
 
 /** @test {LoggerFactory} */
 describe('LoggerFactory ', function () {

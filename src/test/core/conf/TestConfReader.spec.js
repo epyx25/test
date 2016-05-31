@@ -1,6 +1,6 @@
-import ConfReader from '../../app/core/conf/ConfReader'
-import Chai from 'chai'
-const expect = Chai.expect
+import ConfReader from '../../../app/core/conf/ConfReader'
+import chai from 'chai'
+const expect = chai.expect
 
 /** @test {ConfReader} */
 describe('ConfReader ', function () {
