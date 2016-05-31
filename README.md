@@ -1,3 +1,9 @@
+<p>
+<a href="https://github.com/feross/standard"><img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg"/></a>
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-mit-blue.svg"/></a>
+</p>
+
+
 #Skeleton for nodejs v0.12 with ES6 (babeljs) and all we need to well start any kind of project
 # WARNING : DOCKERFILE CURRENTLY IN WORKING PROGRESS
 
