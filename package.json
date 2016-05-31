@@ -10,7 +10,8 @@
     },
     "keywords": [],
     "scripts": {
-        "start": "gulp && node ./dist/app dev",
+        "start": "npm run lint && gulp && node ./dist/app dev",
+        "prod": "npm run lint && gulp && node ./dist/app prod",
         "test": "npm run lint && gulp test:unit",
         "lint": "standard ./src/**/*.js --verbose",
         "docs": "esdoc -c esdoc.json"
