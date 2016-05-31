@@ -31,6 +31,7 @@ docker build -t my-image .
 ```
 
 And then run it :
+
 ```
 docker run -d my-image
 ```
