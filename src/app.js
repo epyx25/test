@@ -9,11 +9,12 @@ class Application {
   * The main method, the entry point of the application
   * @param {Object} argv Arguments from process.argv
   */
-  static main (argv) {
-    const configuration = new ConfReader().read('./conf/' + argv[2] + '.yml')
-    const logger = LoggerFactory.get('bunyan', {name: 'my-app'})
+  static main (argv, path) {
+    const configuration = new ConfReader().read(path + '/conf/' + argv[2] + '.yml')
+    const logger = LoggerFactory.get('bunyan', {name: configuration.application.name})
+    logger.info('Super app is started !')
   }
 }
 
 // We run the main method of the Application class
-Application.main(process.argv)
+Application.main(process.argv, './dist')

@@ -9,3 +9,7 @@ database:
   port: 27017
   user: myUser
   password: myPassword
+
+# Application configuration
+application:
+  name: MyApp

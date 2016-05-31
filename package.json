@@ -11,8 +11,8 @@
     "keywords": [],
     "scripts": {
         "start": "gulp && node ./dist/app dev",
-        "test": "npm run standard && gulp test:unit",
-        "lint": "npm run standard",
+        "test": "npm run lint && gulp test:unit",
+        "lint": "standard ./src/**/*.js --verbose",
         "docs": "esdoc -c esdoc.json"
     },
     "author": "Marvin Frachet",

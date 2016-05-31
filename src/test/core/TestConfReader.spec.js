@@ -1,11 +1,10 @@
 import ConfReader from '../../app/core/conf/ConfReader'
-let chai = require('chai')
-let sinon = require('sinon')
-let expect = chai.expect
+import Chai from 'chai'
+const expect = Chai.expect
 
 /** @test {ConfReader} */
 describe('ConfReader ', function () {
-  let confReader = null
+  let confReader
 
   /**
   * Generate the ConfReader
@@ -17,7 +16,7 @@ describe('ConfReader ', function () {
   /** @test {ConfReader#read} */
   describe('ConfReader#read', function () {
     it('Expect database name to equals "test"', function () {
-      let result = confReader.read('./src/conf/dev.yml')
+      const result = confReader.read('./src/conf/dev.yml')
       expect(result.database.name).to.equals('test')
     })
   })
@@ -25,7 +24,7 @@ describe('ConfReader ', function () {
   /** @test {ConfReader#read} */
   describe('ConfReader#read', function () {
     it('Expect database name to equals null', function () {
-      let result = confReader.read('./src/conf/dev.yml')
+      const result = confReader.read('./src/conf/dev.yml')
       expect(result.database.toto).to.equals(undefined)
     })
   })
@@ -33,7 +32,7 @@ describe('ConfReader ', function () {
   /** @test {ConfReader#read} */
   describe('ConfReader#read', function () {
     it('Expect database name to equals null', function () {
-      let result = confReader.read('./src/conf/test.yml')
+      const result = confReader.read('./src/conf/test.yml')
       expect(result).to.equals(null)
     })
   })
