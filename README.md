@@ -1,4 +1,10 @@
-<p>
+
+<h1 align="center">Nodejs quickstart
+<br>
+<img src="http://img15.hostingpics.net/pics/355900fields.png"/>
+</h1>
+
+<p align="center">
 <a href="https://github.com/feross/standard"><img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg"/></a>
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-mit-blue.svg"/></a>
 
@@ -9,9 +15,6 @@
 <a href='https://coveralls.io/github/Skahrz/project-skeleton?branch=master'>
 <img src='https://coveralls.io/repos/github/Skahrz/project-skeleton/badge.svg?branch=master' alt='Coverage Status' /></a>
 </p>
-
-
-# Project skeleton
 
 This is a simple **project** starter. If you need to quickly kickstart a module or a library, you'd better work with [Yeoman](http://yeoman.io/) and [this](https://github.com/yeoman/generator-node) generator.
 
@@ -91,3 +94,9 @@ Generate the documentation :
 ```
 npm run docs
 ```
+
+
+
+# Credits
+
+<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
