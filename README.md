@@ -8,6 +8,8 @@
 
 This is a simple **project** starter. If you need to quickly kickstart a module or a library, you'd better work with [Yeoman](http://yeoman.io/) and [this](https://github.com/yeoman/generator-node) generator.
 
+# What's in
+
 # Prerequisites
 
 ## Nodejs
