@@ -1,13 +1,6 @@
 <p>
 <a href="https://github.com/feross/standard"><img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg"/></a>
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-mit-blue.svg"/></a>
-
-<a href="https://travis-ci.org/Skahrz/project-skeleton">
-<img src="https://travis-ci.org/Skahrz/project-skeleton.svg?branch=master"/>
-</a>
-
-<a href='https://coveralls.io/github/Skahrz/project-skeleton?branch=master'>
-<img src='https://coveralls.io/repos/github/Skahrz/project-skeleton/badge.svg?branch=master' alt='Coverage Status' /></a>
 </p>
 
 
