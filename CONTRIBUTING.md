@@ -1,35 +1,22 @@
-##### Table of Contents  
+# How to contribute
 
-[How to contribute](#howtocontribute)
-* [Testing](#testing)
-* [Submitting code](#codesubmitted)
-  * [Reporting bugs](#reportbugs)
-  * [Adding features](#addingfeatures)
-  * [Enhancement proposal](#enhancement)
-* [Styleguide](#styleguide)
-  * [Commit message](#commitmessage)
-  * [Code convention](#codeconvention)
-  * [Documentation](#documentation)
-* [Other](#other)
+## Testing
 
-# <a name="howtocontribute"></a> How to contribute
+## Submitting code
 
-## <a name="testing"></a> Testing
+### Reporting bugs
 
-## <a name="codesubmitted"></a> Submitting code
+### Adding features
 
-### <a name="reportbugs"></a> Reporting bugs
+### Enhancement proposal
 
-### <a name="addingfeatures"></a> Adding features
+## Styleguide
 
-### <a name="enhancement"></a> Enhancement proposal
+### Commit message
 
-## <a name="styleguide"></a> Styleguide
+### Code convention
 
-### <a name="commitmessage"></a> Commit message
+### Documentation Styleguide
 
-### <a name="codeconvention"></a> Code convention
 
-### <a name="documentation"></a> Documentation Styleguide
-
-## <a name="other"></a> Other
+## Other

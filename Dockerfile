@@ -19,7 +19,7 @@ RUN apt-get install -y nodejs
 RUN git clone https://github.com/Skahrz/project-skeleton.git
 
 # Install global dependencies
-RUN npm install -g mocha gulp esdoc standard pm2
+RUN npm install -g mocha gulp esdoc pm2
 
 # Move inside of the project
 RUN cd test-docker && npm install && esdoc -c esdoc.json  &&  npm test && pm2 start dist/app.js
