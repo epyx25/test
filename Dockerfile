@@ -9,8 +9,11 @@ WORKDIR ${HOMEDIR}
 # install all dependencies
 ADD package.json ./
 RUN npm install -g yarn
-RUN yarn install --production
+RUN yarn install
 
-# add node content initially
+# add the source files and build the project
 ADD . .
-CMD node app.js prod
+RUN yarn run build
+
+# start the project
+CMD node ./dist/app.js prod
