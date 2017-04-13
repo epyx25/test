@@ -1,33 +1,19 @@
-var gulp = require('gulp'),
+const gulp = require('gulp'),
 	uglify = require('gulp-uglify'),
 	babel = require('gulp-babel'),
 	plumber = require('gulp-plumber'),
 	del = require('del');
 
-
 require('babel-core/register');
 
-
-gulp.task('default', ['conf'], function () {
-	return gulp.src('src/app/**/*.js')
+gulp.task('default', ['conf'], () => gulp.src('src/app/**/*.js')
 		.pipe(plumber())
 		.pipe(babel())
 		.pipe(uglify())
-		.pipe(gulp.dest('dist'));
-});
+		.pipe(gulp.dest('dist')));
 
-gulp.task('conf', ['package'], function () {
-	return gulp.src('./src/conf/*')
-		.pipe(gulp.dest('dist/conf'));
-});
+gulp.task('conf', ['package'], () => gulp.src('./src/conf/*').pipe(gulp.dest('dist/conf')));
 
-gulp.task('package', ['clean'], function () {
-	return gulp.src('./package.json')
-		.pipe(gulp.dest('dist/'));
-});
+gulp.task('package', ['clean'], () => gulp.src('./package.json').pipe(gulp.dest('dist/')));
 
-gulp.task('clean', function () {
-	return del([
-		'dist/**/*'
-	]);
-});
+gulp.task('clean', () => del(['dist/**/*']));
