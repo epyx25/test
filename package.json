@@ -14,7 +14,7 @@
     "build": "./node_modules/.bin/gulp",
     "build:prod": "npm run lint && ./node_modules/.bin/gulp && cd ./dist && yarn install --production",
     "start": "./node_modules/.bin/gulp && node ./dist/app dev",
-    "test": "./node_modules/.bin/ava",
+    "test": "nyc ./node_modules/.bin/ava",
     "lint": "./node_modules/.bin/standard ./src/**/*.js --verbose",
     "docs": "./node_modules/.bin/esdoc -c esdoc.json"
   },
@@ -36,6 +36,7 @@
     "gulp-babel": "^6.1.2",
     "gulp-plumber": "^1.1.0",
     "gulp-uglify": "^2.1.2",
+    "nyc": "^10.2.0",
     "sinon": "^2.1.0",
     "standard": "^10.0.1"
   },

@@ -10,6 +10,10 @@ export class BunyanLogger {
   * @param {Object} params The logger parameters object
   */
   constructor (params) {
+	  /**
+	   * The bunyan logger instance
+	   * @type {Object}
+	   */
     this.logger = bunyan.createLogger(params)
   }
 
