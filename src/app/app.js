@@ -4,15 +4,15 @@ import {LoggerFactory} from './core/logger/loggerFactory'
 * Application class, Entry point of the application
 */
 class Application {
-
   /**
   * The main method, the entry point of the application
   * @param {Object} argv Arguments from process.argv
   */
   static main (argv) {
-    const configuration = new ConfReader().read(__dirname + '/conf/' + argv[2] + '.yml')
+    const confName = argv[2]
+    const configuration = new ConfReader().read(`${__dirname}/conf/${confName}.yml`)
     const logger = LoggerFactory.get('bunyan', {name: configuration.application.name})
-    logger.info('Super app is started !')
+    logger.info(`Application started on ${confName.toUpperCase()} mode`)
   }
 }
 

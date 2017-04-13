@@ -1,8 +1,8 @@
 {
-  "name": "soft-name",
+  "name": "application-name",
   "version": "0.0.1",
-  "description": "App description",
-  "main": "./dist/app.js",
+  "description": "Application description",
+  "main": "app.js",
   "homepage": "",
   "repository": {
     "type": "git",
@@ -11,6 +11,7 @@
   "keywords": [],
   "scripts": {
     "build": "./node_modules/.bin/gulp",
+    "build:prod": "npm run lint && ./node_modules/.bin/gulp && node ./dist/app prod",
     "start": "./node_modules/.bin/gulp && node ./dist/app dev",
     "test": "./node_modules/.bin/ava",
     "lint": "./node_modules/.bin/standard ./src/**/*.js --verbose",

@@ -16,9 +16,14 @@ gulp.task('default', ['conf'], function () {
 		.pipe(gulp.dest('dist'));
 });
 
-gulp.task('conf', ['clean'], function () {
+gulp.task('conf', ['package'], function () {
 	return gulp.src('./src/conf/*')
 		.pipe(gulp.dest('dist/conf'));
+});
+
+gulp.task('package', ['clean'], function () {
+	return gulp.src('./package.json')
+		.pipe(gulp.dest('dist/'));
 });
 
 gulp.task('clean', function () {
