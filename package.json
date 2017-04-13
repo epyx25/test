@@ -10,9 +10,8 @@
   },
   "keywords": [],
   "scripts": {
-    "bootstrap": "yarn install --dev && npm run build:prod && echo 'Bootstrap finished :D'",
-    "build": "./node_modules/.bin/gulp",
-    "build:prod": "npm run lint && ./node_modules/.bin/gulp && cd ./dist && yarn install --production",
+    "bootstrap": "yarn install --dev && npm run build && echo 'Bootstrap finished :D'",
+    "build": "npm test && npm run lint && ./node_modules/.bin/gulp",
     "start": "./node_modules/.bin/gulp && node ./dist/app dev",
     "test": "nyc ./node_modules/.bin/ava",
     "lint": "./node_modules/.bin/standard ./src/**/*.js --verbose",

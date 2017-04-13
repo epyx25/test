@@ -15,6 +15,6 @@ gulp.task('default', ['conf'], () => gulp.src('src/app/**/*.js')
 
 gulp.task('conf', ['package'], () => gulp.src('./src/conf/*').pipe(gulp.dest('dist/conf')));
 
-gulp.task('package', ['clean'], () => gulp.src('./package.json').pipe(gulp.dest('dist/')));
+gulp.task('package', ['clean'], () => gulp.src(['./package.json', './Dockerfile']).pipe(gulp.dest('dist/')));
 
 gulp.task('clean', () => del(['dist/**/*']));

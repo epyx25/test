@@ -9,8 +9,8 @@ class Application {
   * @param {Object} argv Arguments from process.argv
   */
   static main (argv) {
-    const confName = argv[3]
-    const configuration = new ConfReader().read(`./dist/conf/${confName}.yml`)
+    const confName = argv[2] || 'dev'
+    const configuration = new ConfReader().read(`${__dirname}/conf/${confName}.yml`)
     const logger = LoggerFactory.get('bunyan', {name: configuration.application.name})
     logger.info(`Application started on ${confName.toUpperCase()} mode`)
   }
