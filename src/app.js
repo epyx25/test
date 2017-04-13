@@ -1,5 +1,5 @@
-import ConfReader from './app/core/conf/ConfReader'
-import LoggerFactory from './app/core/logger/LoggerFactory'
+import ConfReader from './app/core/conf/confReader'
+import LoggerFactory from './app/core/logger/loggerFactory'
 /**
 * Application class, Entry point of the application
 */

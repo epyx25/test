@@ -3,7 +3,7 @@ import bunyan from 'bunyan'
 /**
 * Bunyan logger implementation
 */
-export default class BunyanLogger {
+export class BunyanLogger {
 
   /**
   * Construct a BunyanLogger
