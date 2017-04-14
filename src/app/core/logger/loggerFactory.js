@@ -3,7 +3,6 @@ import {BunyanLogger} from './concrete/bunyanLogger'
 * Logger Facory class
 */
 export class LoggerFactory {
-
   /**
   * Get a logger from its name or return null
   * @param {String} name Name of the logger
@@ -16,5 +15,4 @@ export class LoggerFactory {
     }
     return null
   }
-
 }
