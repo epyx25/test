@@ -5,8 +5,6 @@ const gulp = require('gulp'),
 	plumber = require('gulp-plumber'),
 	del = require('del');
 
-require('babel-core/register');
-
 gulp.task('default', ['conf'], () => gulp.src('src/app/**/*.js')
 	.pipe(plumber())
 	.pipe(babel())
