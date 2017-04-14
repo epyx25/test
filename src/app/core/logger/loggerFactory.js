@@ -1,8 +1,8 @@
-import BunyanLogger from './concrete/BunyanLogger'
+import {BunyanLogger} from './concrete/bunyanLogger'
 /**
 * Logger Facory class
 */
-export default class LoggerFactory {
+export class LoggerFactory {
 
   /**
   * Get a logger from its name or return null

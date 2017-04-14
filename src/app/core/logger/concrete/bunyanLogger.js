@@ -3,13 +3,17 @@ import bunyan from 'bunyan'
 /**
 * Bunyan logger implementation
 */
-export default class BunyanLogger {
+export class BunyanLogger {
 
   /**
   * Construct a BunyanLogger
   * @param {Object} params The logger parameters object
   */
   constructor (params) {
+	  /**
+	   * The bunyan logger instance
+	   * @type {Object}
+	   */
     this.logger = bunyan.createLogger(params)
   }
 

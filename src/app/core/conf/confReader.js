@@ -5,7 +5,7 @@ import fs from 'fs'
 * ConfReader
 * This class aims to read the yml configuration files
 */
-export default class ConfReader {
+export class ConfReader {
 
   /**
   * Read method, read a yml conf files
