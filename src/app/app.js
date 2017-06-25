@@ -1,5 +1,8 @@
 import { ConfReader } from './core/conf/confReader'
 import { LoggerFactory } from './core/logger/loggerFactory'
+import { Scraper } from './scraper/scraper'
+import { ORM } from './core/orm/orm'
+
 /**
  * Application class, Entry point of the application
  */
@@ -13,6 +16,10 @@ class Application {
     const configuration = new ConfReader().read(`${__dirname}/conf/${confName}.yml`)
     const logger = LoggerFactory.get('bunyan', {name: configuration.application.name})
     logger.info(`Application started on ${confName.toUpperCase()} mode`)
+    //console.log(new Scraper().run())
+    new ORM(configuration)
+    console.log('yo')
+
   }
 }
 

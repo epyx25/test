@@ -3,10 +3,12 @@ import test from 'ava'
 
 test.beforeEach(t => {
   t.context.confReader = new ConfReader()
+  t.context.fixturesFolder = './src/test/fixtures/conf/'
 })
 
 test('Expect database name to equals "test" when reading the dev.yml conf file', t => {
-  const devConf = t.context.confReader.read('./src/conf/dev.yml')
+  const { context : ctx } = t
+  const devConf = ctx.confReader.read(ctx.fixturesFolder + 'dev.yml')
   t.is(devConf.database.name, 'test')
 })
 

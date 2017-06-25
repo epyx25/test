@@ -5,7 +5,7 @@ node:
 
 # Database configuration
 database:
-  name: tennis
+  name: test
   port: 5432
   user: tennis
   password: tennis
