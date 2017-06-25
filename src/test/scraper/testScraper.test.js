@@ -9,11 +9,7 @@ test('Basic test', t => {
   t.is('test', 'test')
 })
 
-test('Scraper test', t => {
-  t.plan(1)
-  let scraper = new Scraper()
-  return scraper.yahoo().then(res =>{
-    console.log(res)
-    t.true(true)
-  })
+test('Scraper test', async t => {
+  await new Scraper().run()
+  t.is('test', 'test')
 })
